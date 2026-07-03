@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+h1, h2{
+    color: #c60024;
+}
+
+article h3 {
+    color: #c60024;
+}
+
+aside h3 {
+    color: #000000;
+}
+
+main {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#content {
+    flex: 4;
+}
+
+aside {
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #c60024;
+    color: white;
+}
