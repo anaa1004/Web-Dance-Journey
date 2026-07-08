@@ -13,9 +13,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>My Dance Journey</h1>
-        <p>From my first steps in elementary school to performing on bigger stages.</p>
+    <header class="container">
+        <div class="logo">
+            <h1>My Dance Journey</h1>
+            <p>From my first steps in elementary school to performing on bigger stages.</p>
+        </div>
 
         <nav>
         <ul>
@@ -27,47 +29,68 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <div id="content">
-            <article id="journey">
+            <article id="journey" class="card">
                 <h2>My Early Days</h2>
-                <figure>
-                    <img src="assets/images/foto1.jpeg" alt="My early dance days">
-                    <figcaption>My early dance days</figcaption>
-                </figure>
-                <p>I first fell in love with dance when I was in elementary school. During junior high, I drifted away from it because the environment at my school didn't really give me the opportunity to keep dancing. Even so, my passion for dance never truly disappeared.</p>
-                <p>When I started high school, I made the decision to return to it, and it felt like coming home. Since then, dance has remained an important part of my life, and I’ve continued pursuing it throughout my college years.</p>
+                <div class="article-content">
+                    <figure class="article-image">
+                        <img src="assets/images/foto1.jpeg" alt="My early dance days">
+                        <figcaption>My early dance days</figcaption>
+                    </figure>
+                    <div class="article-text">
+                        <p>I first fell in love with dance when I was in elementary school. During junior high, I drifted away from it because the environment at my school didn't really give me the opportunity to keep dancing. Even so, my passion for dance never truly disappeared.</p>
+                        <p>When I started high school, I made the decision to return to it, and it felt like coming home. Since then, dance has remained an important part of my life, and I’ve continued pursuing it throughout my college years.</p>
+                    </div>
+                </div>
             </article>
-            <article id="why-dance">
+            <article id="why-dance" class="card">
                 <h2>Why Dance Matters to Me</h2>
-                <figure>
-                    <img src="assets/images/foto4.jpeg" alt="Dance is my passion">
-                    <figcaption>Dance is my passion</figcaption>
-                </figure>
-                <p>Beyond academics, dance is one of the passions and skills I am most committed to developing. I hope it will always remain a part of who I am, no matter where life takes me.</p>
-                <p>Dance has been more than just a hobby for me; it's a way of expressing myself and connecting with others. It has taught me discipline, creativity, and the importance of perseverance.</p>
+                <div class="article-content">
+                    <figure class="article-image">
+                        <img src="assets/images/foto4.jpeg" alt="Dance is my passion">
+                        <figcaption>Dance is my passion</figcaption>
+                    </figure>
+                    <div class="article-text">
+                        <p>Dance has always been more than just a hobby for me; it's a way of expressing myself and connecting with others. It has taught me discipline, creativity, and the importance of perseverance.</p>
+                        <p>Even when life gets busy with academics and other responsibilities, I always find time to dance. It's a part of who I am, and I hope it will always remain that way.</p>
+                    </div>
+                </div>
             </article>
-            <article id="memorable-moments">
+            <article id="memorable-moments" class="card">
                 <h2>Memorable Moments</h2>
-
-                <h3>DBL Dance 2024</h3>
-                <figure>
-                    <img src="assets/images/foto3.jpeg" alt="DBL Dance 2024">
-                    <figcaption>DBL Dance 2024</figcaption>
-                </figure>
-                <p>DBL Dance 2024 will always hold a special place in my heart because it was both the first and the last dance competition I had the chance to experience during high school.</p>
-                <p>Even though it was my first time performing on such a big stage, it felt surprisingly calm. I didn't feel any pressure at all, and I genuinely enjoyed every moment of my performance on the first day of DBL.</p>
-                <h3>LKMM-TD PKKMB FILKOM</h3>
-                <figure>
-                    <img src="assets/images/foto2.jpeg" alt="LKMM-TD PKKMB Fakultas">
-                    <figcaption>LKMM-TD PKKMB Fakultas</figcaption>
-                </figure>
-                <p>Performing with my friends at the LKMM-TD event is another memory I will always treasure. Sharing the stage with them made the experience even more meaningful and unforgettable.</p>
-                <p>This performance marked my very first dance performance after beginning my journey in college. It was also the first time I had ever danced with friends I had only just met, which made the experience both exciting and unforgettable.</p>
+                <div class="moments-slider">
+                    <div class="moment">
+                        <h3>DBL Dance 2024</h3>
+                        <div class="article-content">
+                            <figure class="article-image">
+                                <img src="assets/images/foto3.jpeg" alt="DBL Dance 2024">
+                                <figcaption>DBL Dance 2024</figcaption>
+                            </figure>
+                            <div class="article-text">
+                                <p>DBL Dance 2024 will always hold a special place in my heart because it was both the first and the last dance competition I had the chance to experience during high school.</p>
+                                <p>Even though it was my first time performing on such a big stage, it felt surprisingly calm. I didn't feel any pressure at all, and I genuinely enjoyed every moment of my performance on the first day of DBL.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="moment">
+                        <h3>LKMM-TD PKKMB FILKOM</h3>
+                        <div class="article-content">
+                            <figure class="article-image">
+                                <img src="assets/images/foto2.jpeg" alt="LKMM-TD PKKMB Fakultas">
+                                <figcaption>LKMM-TD PKKMB Fakultas</figcaption>
+                            </figure>
+                            <div class="article-text">
+                                <p>Performing with my friends at the LKMM-TD event is another memory I will always treasure. Sharing the stage with them made the experience even more meaningful and unforgettable.</p>
+                                <p>This performance marked my very first dance performance after beginning my journey in college. It was also the first time I had ever danced with friends I had only just met, which made the experience both exciting and unforgettable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
         </div>
 
-        <aside>
+        <aside class="card">
             <h2>About Me</h2>
             <img src="assets/images/profile.jpeg" alt="Profile Picture">
 

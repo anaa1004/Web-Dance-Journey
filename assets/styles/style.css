@@ -7,11 +7,22 @@
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
+    background-color: #f3f4f6;
     color: #333333;
 }
 
-h1, h2{
+.logo h1 {
+    font-size: 2rem;
+    color: #c60024;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h2 {
     color: #c60024;
 }
 
@@ -19,17 +30,19 @@ article h3 {
     color: #c60024;
 }
 
-aside h3 {
+aside section h3 {
     color: #000000;
 }
 
 main {
     display: flex;
     gap: 1.5rem;
+    align-items: flex-start;
+    padding:60px 0;
 }
 
 #content {
-    flex: 4;
+    flex: 3;
 }
 
 aside {
@@ -37,8 +50,106 @@ aside {
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    color: #333333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+   padding: 5px;
+   background: inherit;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c60024;
+}
+
+figure {
+    margin-bottom: 1rem;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 0.5rem;
+}   
+
+.article-image {
+    flex-shrink: 0;
+}
+
+.article-image img {
+    width: 100%;
+    max-width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
+
+aside img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
     text-align: center;
-    padding: 20px;
+    padding: 2rem;
     background-color: #c60024;
     color: white;
 }
+
+.card {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
+    margin-bottom: 1.5rem;
+}
+
+.card h2 {
+    margin-bottom: 1.6rem;
+}
+
+.article-content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.article-text {
+    flex: 1;
+}
+
+.article-text p {
+    margin-bottom: 1rem;
+}
+
+
+
+
+
