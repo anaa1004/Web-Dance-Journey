@@ -214,7 +214,49 @@ footer {
     }
 }
 
+.slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.moment {
+    min-width: 100%;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background: rgba(255, 255, 255, .09);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+
+    font-size: 1.2rem;
+}
+
+.prev {
+    left: 12px;
+}
+
+.next {
+    right: 12px;
+}
 
 
 
