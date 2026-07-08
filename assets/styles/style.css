@@ -16,10 +16,15 @@ body {
     color: #c60024;
 }
 
+.logo p {
+    margin-top: 0.5rem;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 h2 {
@@ -38,7 +43,16 @@ main {
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
-    padding:60px 0;
+    padding: 60px 0;
+}
+
+article {
+    scroll-margin-top: 140px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 140px;
 }
 
 #content {
@@ -50,15 +64,18 @@ aside {
 }
 
 header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    background-color: #ffffff;
-    color: #333333;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    padding: 20px 24px;
 }
 
 nav ul {
@@ -116,6 +133,17 @@ aside img {
     margin: 0 auto;
 }
 
+aside section {
+    margin-top: 1.5rem;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #333333;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
 footer {
     text-align: center;
     padding: 2rem;
@@ -129,6 +157,12 @@ footer {
     border-radius: 16px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
     margin-bottom: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
 }
 
 .card h2 {
@@ -147,6 +181,35 @@ footer {
 
 .article-text p {
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .article-content {
+        flex-direction: column;
+    }
+
+    .article-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    aside {
+        width: 100%;
+    }
 }
 
 
