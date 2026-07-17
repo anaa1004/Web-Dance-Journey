@@ -66,3 +66,5 @@ Through this project, I learned how to:
 - Dicoding: https://www.dicoding.com/users/anaa1004
 
 ---
+
+Last update: testing GitHub Pages
